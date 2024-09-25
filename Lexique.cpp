@@ -9,12 +9,12 @@
 Lexique::Lexique(const std::string& fileName)
 {
     readFileIntoString(fileName, this->inputString);
-    char* cleanedString = strtok((char*)inputString.c_str(), " _,.?()!;-\"\r\n\t");
+    char* cleanedString = strtok((char*)inputString.c_str(), " _,.?()!;:-\"\r\n\t/$£0123456789'’@");
     while (cleanedString != NULL)
     {
         std::string currentWord = cleanedString;
         this->occurences[currentWord]++;
-        cleanedString = strtok(NULL, " _,.?()!;-\"\r\n\t");
+        cleanedString = strtok(NULL, " _,.?()!;:-\"\r\n\t/$£0123456789'’@");
     };
 }
 
