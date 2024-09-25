@@ -6,7 +6,10 @@
 #include <vector>
 
 class Lexique {
-    
+public:
+    explicit Lexique() = default;
+    Lexique(Lexique const& l);
+    virtual ~Lexique();
     
 protected:
     std::string _nom;
