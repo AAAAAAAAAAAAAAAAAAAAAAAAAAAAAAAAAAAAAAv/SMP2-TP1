@@ -2,7 +2,7 @@
 
 int main(void) {
 
-    Lexique lexique;
+    Lexique lexique("lesMiserables_a.txt");
     
 
     
