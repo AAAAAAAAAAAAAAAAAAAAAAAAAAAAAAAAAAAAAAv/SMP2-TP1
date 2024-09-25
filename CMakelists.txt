@@ -9,7 +9,7 @@ SET(SOURCES
 )
 
 SET(HEADER
-    Lexique.h
+    Lexique.hpp
     utilitaire.hpp
 )
 
