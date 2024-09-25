@@ -11,6 +11,8 @@ public:
     explicit Lexique(std::string nom);
     explicit Lexique(Lexique const& l);
     virtual ~Lexique() = default;
+
+
     
 protected:
     std::string _nom;

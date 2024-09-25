@@ -4,7 +4,8 @@ project(LEXIQUE C CXX)
 
 SET(SOURCES 
     main.cpp
-    utilitaire.cpp    
+    utilitaire.cpp
+    lexique.cpp    
 )
 
 SET(HEADER
