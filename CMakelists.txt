@@ -5,12 +5,12 @@ project(LEXIQUE C CXX)
 SET(SOURCES 
     main.cpp
     utilitaire.cpp
-    lexique.cpp    
+    Lexique.cpp    
 )
 
 SET(HEADER
     Lexique.h
-
+    utilitaire.hpp
 )
 
 add_executable(
