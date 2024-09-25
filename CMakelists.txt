@@ -1,0 +1,19 @@
+cmake_minimum_required(VERSION 3.5)
+
+project(LEXIQUE C CXX)
+
+SET(SOURCES 
+    main.cpp
+    utilitaire.cpp    
+)
+
+SET(HEADER
+    Lexique.h
+
+)
+
+add_executable(
+    ${PROJECT_NAME}
+    ${SOURCES}
+    ${HEADERS}
+)

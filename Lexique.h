@@ -2,19 +2,20 @@
 #define LEXIQUE_H
 
 #include <string>
-#include <stdint>
+#include <stdint.h>
 #include <vector>
 
 class Lexique {
 public:
-    explicit Lexique() = default;
-    Lexique(Lexique const& l);
-    virtual ~Lexique();
+    Lexique() = default;
+    explicit Lexique(std::string nom);
+    explicit Lexique(Lexique const& l);
+    virtual ~Lexique() = default;
     
 protected:
     std::string _nom;
     uint32_t _occurence;
-    std::vector<string> _lexique;
+    std::vector<std::string> _lexique;
 };
 
-#endif //LExIQUE_H
+#endif //LEXIQUE_H
